@@ -8,7 +8,7 @@
             "url": "https://github.com/ARGOeu-Metrics/argo-probe-fedcloud/",
             "name": "ARGOeu-Metrics/argo-probe-fedcloud",
             "tag": "master",
-            "commit_id": "b08f7912bbfa99ec0166444e637147a351dfc118",
+            "commit_id": "5d1191f4f7971e2fc4548fe4cb2023e56306348b",
             "is_main_repo": true,
             "avatar_url": "https://avatars.githubusercontent.com/u/98024737?v=4",
             "description": null,
@@ -52,7 +52,7 @@
                                         "git rev-parse --is-inside-work-tree "
                                     ],
                                     "stdout_text": "true",
-                                    "url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/argo-probe-fedcloud.assess.sqaaas/job/master/2/execution/node/34/log?consoleFull"
+                                    "url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/argo-probe-fedcloud.assess.sqaaas/job/master/3/execution/node/34/log?consoleFull"
                                 },
                                 "level": "REQUIRED",
                                 "build_repo": "https://github.com/eosc-synergy/argo-probe-fedcloud.assess.sqaaas"
@@ -75,7 +75,7 @@
             }
         },
         "QC.Doc": {
-            "valid": false,
+            "valid": true,
             "subcriteria": {
                 "QC.Doc06.1": {
                     "description": "Is the software scope outlined in the code repository?",
@@ -103,8 +103,8 @@
                                     "stdout_command": [
                                         "find_doc_files.py --file_type all"
                                     ],
-                                    "stdout_text": "{\"README\": [{\"file_name\": \"README.md\", \"size\": 669}], \"CODE_OF_CONDUCT\": [], \"CONTRIBUTING\": []}",
-                                    "url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/argo-probe-fedcloud.assess.sqaaas/job/master/2/execution/node/43/log?consoleFull"
+                                    "stdout_text": "{\"README\": [{\"file_name\": \"README.md\", \"size\": 669}], \"CODE_OF_CONDUCT\": [{\"file_name\": \"CODE_OF_CONDUCT.md\", \"size\": 3106}], \"CONTRIBUTING\": [{\"file_name\": \"CONTRIBUTING.md\", \"size\": 1429}]}",
+                                    "url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/argo-probe-fedcloud.assess.sqaaas/job/master/3/execution/node/43/log?consoleFull"
                                 },
                                 "level": "REQUIRED",
                                 "build_repo": "https://github.com/eosc-synergy/argo-probe-fedcloud.assess.sqaaas"
@@ -121,8 +121,18 @@
                                         "size": 669
                                     }
                                 ],
-                                "CODE_OF_CONDUCT": [],
-                                "CONTRIBUTING": []
+                                "CODE_OF_CONDUCT": [
+                                    {
+                                        "file_name": "CODE_OF_CONDUCT.md",
+                                        "size": 3106
+                                    }
+                                ],
+                                "CONTRIBUTING": [
+                                    {
+                                        "file_name": "CONTRIBUTING.md",
+                                        "size": 1429
+                                    }
+                                ]
                             }
                         }
                     ],
@@ -134,8 +144,8 @@
                     "hint": "A CODE_OF_CONDUCT file sets the path for a constructive, respectful and positive atmosphere among all the contributors in your software project. Of course you can define your own, but in case you want to rely on external and widely-adopted code of conducts check out some of the most popular ones: <a href=\"https://contributor-covenant.org/\" target=\"_blank\">Contributor Covenant</a> or <a href=\"https://web.archive.org/web/20200330154000/http://citizencodeofconduct.org/\" target=\"_blank\">Citizen Code of Conduct</a>",
                     "evidence": [
                         {
-                            "valid": false,
-                            "message": "A CODE_OF_CONDUCT file is not present in the code repository",
+                            "valid": true,
+                            "message": "A CODE_OF_CONDUCT file is present in the code repository",
                             "plugin": {
                                 "name": "report2sqaaas-plugin-find_doc_files",
                                 "version": "2.1.0"
@@ -154,8 +164,8 @@
                                     "stdout_command": [
                                         "find_doc_files.py --file_type all"
                                     ],
-                                    "stdout_text": "{\"README\": [{\"file_name\": \"README.md\", \"size\": 669}], \"CODE_OF_CONDUCT\": [], \"CONTRIBUTING\": []}",
-                                    "url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/argo-probe-fedcloud.assess.sqaaas/job/master/2/execution/node/43/log?consoleFull"
+                                    "stdout_text": "{\"README\": [{\"file_name\": \"README.md\", \"size\": 669}], \"CODE_OF_CONDUCT\": [{\"file_name\": \"CODE_OF_CONDUCT.md\", \"size\": 3106}], \"CONTRIBUTING\": [{\"file_name\": \"CONTRIBUTING.md\", \"size\": 1429}]}",
+                                    "url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/argo-probe-fedcloud.assess.sqaaas/job/master/3/execution/node/43/log?consoleFull"
                                 },
                                 "level": "REQUIRED",
                                 "build_repo": "https://github.com/eosc-synergy/argo-probe-fedcloud.assess.sqaaas"
@@ -172,13 +182,22 @@
                                         "size": 669
                                     }
                                 ],
-                                "CODE_OF_CONDUCT": [],
-                                "CONTRIBUTING": []
+                                "CODE_OF_CONDUCT": [
+                                    {
+                                        "file_name": "CODE_OF_CONDUCT.md",
+                                        "size": 3106
+                                    }
+                                ],
+                                "CONTRIBUTING": [
+                                    {
+                                        "file_name": "CONTRIBUTING.md",
+                                        "size": 1429
+                                    }
+                                ]
                             }
                         }
                     ],
-                    "valid": false,
-                    "required_for_next_level_badge": true
+                    "valid": true
                 },
                 "QC.Doc06.2": {
                     "description": "Is there a clear path or guidelines on how to contribute to the code?",
@@ -186,8 +205,8 @@
                     "hint": "A CONTRIBUTING file shall be present in the root path of the code repository describing the expected workflow to follow when adding contributions. Please check <a href=\"https://mozillascience.github.io/working-open-workshop/contributing/\" target=\"_blank\">Mozilla's guidelines</a> and <a href=\"https://github.com/github/docs/blob/main/CONTRIBUTING.md\" target=\"_blank\">GitHub's CONTRIBUTING.md example</a> to get inspired on how to write a good CONTRIBUTING file",
                     "evidence": [
                         {
-                            "valid": false,
-                            "message": "A CONTRIBUTING file is not present in the code repository",
+                            "valid": true,
+                            "message": "A CONTRIBUTING file is present in the code repository",
                             "plugin": {
                                 "name": "report2sqaaas-plugin-find_doc_files",
                                 "version": "2.1.0"
@@ -206,8 +225,8 @@
                                     "stdout_command": [
                                         "find_doc_files.py --file_type all"
                                     ],
-                                    "stdout_text": "{\"README\": [{\"file_name\": \"README.md\", \"size\": 669}], \"CODE_OF_CONDUCT\": [], \"CONTRIBUTING\": []}",
-                                    "url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/argo-probe-fedcloud.assess.sqaaas/job/master/2/execution/node/43/log?consoleFull"
+                                    "stdout_text": "{\"README\": [{\"file_name\": \"README.md\", \"size\": 669}], \"CODE_OF_CONDUCT\": [{\"file_name\": \"CODE_OF_CONDUCT.md\", \"size\": 3106}], \"CONTRIBUTING\": [{\"file_name\": \"CONTRIBUTING.md\", \"size\": 1429}]}",
+                                    "url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/argo-probe-fedcloud.assess.sqaaas/job/master/3/execution/node/43/log?consoleFull"
                                 },
                                 "level": "REQUIRED",
                                 "build_repo": "https://github.com/eosc-synergy/argo-probe-fedcloud.assess.sqaaas"
@@ -224,13 +243,22 @@
                                         "size": 669
                                     }
                                 ],
-                                "CODE_OF_CONDUCT": [],
-                                "CONTRIBUTING": []
+                                "CODE_OF_CONDUCT": [
+                                    {
+                                        "file_name": "CODE_OF_CONDUCT.md",
+                                        "size": 3106
+                                    }
+                                ],
+                                "CONTRIBUTING": [
+                                    {
+                                        "file_name": "CONTRIBUTING.md",
+                                        "size": 1429
+                                    }
+                                ]
                             }
                         }
                     ],
-                    "valid": false,
-                    "required_for_next_level_badge": true
+                    "valid": true
                 },
                 "QC.Doc01.1": {
                     "description": "Are docs managed in the same repository as code?",
@@ -256,7 +284,7 @@
                                         "git rev-parse --is-inside-work-tree "
                                     ],
                                     "stdout_text": "true",
-                                    "url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/argo-probe-fedcloud.assess.sqaaas/job/master/2/execution/node/52/log?consoleFull"
+                                    "url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/argo-probe-fedcloud.assess.sqaaas/job/master/3/execution/node/52/log?consoleFull"
                                 },
                                 "level": "REQUIRED",
                                 "build_repo": "https://github.com/eosc-synergy/argo-probe-fedcloud.assess.sqaaas"
@@ -298,7 +326,7 @@
                                         "mdl --json  ."
                                     ],
                                     "stdout_text": "[{\"filename\":\"./README.md\",\"line\":14,\"rule\":\"MD013\",\"aliases\":[\"line-length\"],\"description\":\"Line length\"},{\"filename\":\"./README.md\",\"line\":15,\"rule\":\"MD013\",\"aliases\":[\"line-length\"],\"description\":\"Line length\"},{\"filename\":\"./README.md\",\"line\":14,\"rule\":\"MD033\",\"aliases\":[\"no-inline-html\"],\"description\":\"Inline HTML\"},{\"filename\":\"./README.md\",\"line\":15,\"rule\":\"MD033\",\"aliases\":[\"no-inline-html\"],\"description\":\"Inline HTML\"}]",
-                                    "url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/argo-probe-fedcloud.assess.sqaaas/job/master/2/execution/node/61/log?consoleFull"
+                                    "url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/argo-probe-fedcloud.assess.sqaaas/job/master/3/execution/node/61/log?consoleFull"
                                 },
                                 "level": "RECOMMENDED",
                                 "build_repo": "https://github.com/eosc-synergy/argo-probe-fedcloud.assess.sqaaas"
@@ -333,9 +361,9 @@
                 }
             },
             "coverage": {
-                "percentage": 40,
+                "percentage": 80,
                 "total_subcriteria": 5,
-                "success_subcriteria": 2
+                "success_subcriteria": 4
             }
         },
         "QC.Lic": {
@@ -376,8 +404,8 @@
                                     "stdout_command": [
                                         "bandit -f json --quiet  --confidence-level high --severity-level high --recursive  ."
                                     ],
-                                    "stdout_text": "{\n  \"errors\": [],\n  \"generated_at\": \"2024-12-19T15:41:54Z\",\n  \"metrics\": {\n    \"./setup.py\": {\n      \"CONFIDENCE.HIGH\": 0,\n      \"CONFIDENCE.LOW\": 0,\n      \"CONFIDENCE.MEDIUM\": 0,\n      \"CONFIDENCE.UNDEFINED\": 0,\n      \"SEVERITY.HIGH\": 0,\n      \"SEVERITY.LOW\": 0,\n      \"SEVERITY.MEDIUM\": 0,\n      \"SEVERITY.UNDEFINED\": 0,\n      \"loc\": 2,\n      \"nosec\": 0,\n      \"skipped_tests\": 0\n    },\n    \"./src/argo_probe_fedcloud/__init__.py\": {\n      \"CONFIDENCE.HIGH\": 0,\n      \"CONFIDENCE.LOW\": 0,\n      \"CONFIDENCE.MEDIUM\": 0,\n      \"CONFIDENCE.UNDEFINED\": 0,\n      \"SEVERITY.HIGH\": 0,\n      \"SEVERITY.LOW\": 0,\n      \"SEVERITY.MEDIUM\": 0,\n      \"SEVERITY.UNDEFINED\": 0,\n      \"loc\": 0,\n      \"nosec\": 0,\n      \"skipped_tests\": 0\n    },\n    \"./src/argo_probe_fedcloud/cloudinfo.py\": {\n      \"CONFIDENCE.HIGH\": 0,\n      \"CONFIDENCE.LOW\": 0,\n      \"CONFIDENCE.MEDIUM\": 1,\n      \"CONFIDENCE.UNDEFINED\": 0,\n      \"SEVERITY.HIGH\": 0,\n      \"SEVERITY.LOW\": 0,\n      \"SEVERITY.MEDIUM\": 1,\n      \"SEVERITY.UNDEFINED\": 0,\n      \"loc\": 115,\n      \"nosec\": 0,\n      \"skipped_tests\": 0\n    },\n    \"./src/argo_probe_fedcloud/helpers.py\": {\n      \"CONFIDENCE.HIGH\": 0,\n      \"CONFIDENCE.LOW\": 0,\n      \"CONFIDENCE.MEDIUM\": 1,\n      \"CONFIDENCE.UNDEFINED\": 0,\n      \"SEVERITY.HIGH\": 0,\n      \"SEVERITY.LOW\": 1,\n      \"SEVERITY.MEDIUM\": 0,\n      \"SEVERITY.UNDEFINED\": 0,\n      \"loc\": 142,\n      \"nosec\": 0,\n      \"skipped_tests\": 0\n    },\n    \"./src/argo_probe_fedcloud/novaprobe.py\": {\n      \"CONFIDENCE.HIGH\": 1,\n      \"CONFIDENCE.LOW\": 0,\n      \"CONFIDENCE.MEDIUM\": 0,\n      \"CONFIDENCE.UNDEFINED\": 0,\n      \"SEVERITY.HIGH\": 0,\n      \"SEVERITY.LOW\": 0,\n      \"SEVERITY.MEDIUM\": 1,\n      \"SEVERITY.UNDEFINED\": 0,\n      \"loc\": 261,\n      \"nosec\": 0,\n      \"skipped_tests\": 0\n    },\n    \"./src/argo_probe_fedcloud/swiftprobe.py\": {\n      \"CONFIDENCE.HIGH\": 1,\n      \"CONFIDENCE.LOW\": 0,\n      \"CONFIDENCE.MEDIUM\": 0,\n      \"CONFIDENCE.UNDEFINED\": 0,\n      \"SEVERITY.HIGH\": 0,\n      \"SEVERITY.LOW\": 1,\n      \"SEVERITY.MEDIUM\": 0,\n      \"SEVERITY.UNDEFINED\": 0,\n      \"loc\": 228,\n      \"nosec\": 0,\n      \"skipped_tests\": 0\n    },\n    \"_totals\": {\n      \"CONFIDENCE.HIGH\": 2,\n      \"CONFIDENCE.LOW\": 0,\n      \"CONFIDENCE.MEDIUM\": 2,\n      \"CONFIDENCE.UNDEFINED\": 0,\n      \"SEVERITY.HIGH\": 0,\n      \"SEVERITY.LOW\": 2,\n      \"SEVERITY.MEDIUM\": 2,\n      \"SEVERITY.UNDEFINED\": 0,\n      \"loc\": 748,\n      \"nosec\": 0,\n      \"skipped_tests\": 0\n    }\n  },\n  \"results\": []\n}",
-                                    "url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/argo-probe-fedcloud.assess.sqaaas/job/master/2/execution/node/79/log?consoleFull"
+                                    "stdout_text": "{\n  \"errors\": [],\n  \"generated_at\": \"2024-12-19T16:01:58Z\",\n  \"metrics\": {\n    \"./setup.py\": {\n      \"CONFIDENCE.HIGH\": 0,\n      \"CONFIDENCE.LOW\": 0,\n      \"CONFIDENCE.MEDIUM\": 0,\n      \"CONFIDENCE.UNDEFINED\": 0,\n      \"SEVERITY.HIGH\": 0,\n      \"SEVERITY.LOW\": 0,\n      \"SEVERITY.MEDIUM\": 0,\n      \"SEVERITY.UNDEFINED\": 0,\n      \"loc\": 2,\n      \"nosec\": 0,\n      \"skipped_tests\": 0\n    },\n    \"./src/argo_probe_fedcloud/__init__.py\": {\n      \"CONFIDENCE.HIGH\": 0,\n      \"CONFIDENCE.LOW\": 0,\n      \"CONFIDENCE.MEDIUM\": 0,\n      \"CONFIDENCE.UNDEFINED\": 0,\n      \"SEVERITY.HIGH\": 0,\n      \"SEVERITY.LOW\": 0,\n      \"SEVERITY.MEDIUM\": 0,\n      \"SEVERITY.UNDEFINED\": 0,\n      \"loc\": 0,\n      \"nosec\": 0,\n      \"skipped_tests\": 0\n    },\n    \"./src/argo_probe_fedcloud/cloudinfo.py\": {\n      \"CONFIDENCE.HIGH\": 0,\n      \"CONFIDENCE.LOW\": 0,\n      \"CONFIDENCE.MEDIUM\": 1,\n      \"CONFIDENCE.UNDEFINED\": 0,\n      \"SEVERITY.HIGH\": 0,\n      \"SEVERITY.LOW\": 0,\n      \"SEVERITY.MEDIUM\": 1,\n      \"SEVERITY.UNDEFINED\": 0,\n      \"loc\": 115,\n      \"nosec\": 0,\n      \"skipped_tests\": 0\n    },\n    \"./src/argo_probe_fedcloud/helpers.py\": {\n      \"CONFIDENCE.HIGH\": 0,\n      \"CONFIDENCE.LOW\": 0,\n      \"CONFIDENCE.MEDIUM\": 1,\n      \"CONFIDENCE.UNDEFINED\": 0,\n      \"SEVERITY.HIGH\": 0,\n      \"SEVERITY.LOW\": 1,\n      \"SEVERITY.MEDIUM\": 0,\n      \"SEVERITY.UNDEFINED\": 0,\n      \"loc\": 142,\n      \"nosec\": 0,\n      \"skipped_tests\": 0\n    },\n    \"./src/argo_probe_fedcloud/novaprobe.py\": {\n      \"CONFIDENCE.HIGH\": 1,\n      \"CONFIDENCE.LOW\": 0,\n      \"CONFIDENCE.MEDIUM\": 0,\n      \"CONFIDENCE.UNDEFINED\": 0,\n      \"SEVERITY.HIGH\": 0,\n      \"SEVERITY.LOW\": 0,\n      \"SEVERITY.MEDIUM\": 1,\n      \"SEVERITY.UNDEFINED\": 0,\n      \"loc\": 261,\n      \"nosec\": 0,\n      \"skipped_tests\": 0\n    },\n    \"./src/argo_probe_fedcloud/swiftprobe.py\": {\n      \"CONFIDENCE.HIGH\": 1,\n      \"CONFIDENCE.LOW\": 0,\n      \"CONFIDENCE.MEDIUM\": 0,\n      \"CONFIDENCE.UNDEFINED\": 0,\n      \"SEVERITY.HIGH\": 0,\n      \"SEVERITY.LOW\": 1,\n      \"SEVERITY.MEDIUM\": 0,\n      \"SEVERITY.UNDEFINED\": 0,\n      \"loc\": 228,\n      \"nosec\": 0,\n      \"skipped_tests\": 0\n    },\n    \"_totals\": {\n      \"CONFIDENCE.HIGH\": 2,\n      \"CONFIDENCE.LOW\": 0,\n      \"CONFIDENCE.MEDIUM\": 2,\n      \"CONFIDENCE.UNDEFINED\": 0,\n      \"SEVERITY.HIGH\": 0,\n      \"SEVERITY.LOW\": 2,\n      \"SEVERITY.MEDIUM\": 2,\n      \"SEVERITY.UNDEFINED\": 0,\n      \"loc\": 748,\n      \"nosec\": 0,\n      \"skipped_tests\": 0\n    }\n  },\n  \"results\": []\n}",
+                                    "url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/argo-probe-fedcloud.assess.sqaaas/job/master/3/execution/node/79/log?consoleFull"
                                 },
                                 "level": "REQUIRED",
                                 "build_repo": "https://github.com/eosc-synergy/argo-probe-fedcloud.assess.sqaaas"
@@ -389,7 +417,7 @@
                             },
                             "data_unstructured": {
                                 "errors": [],
-                                "generated_at": "2024-12-19T15:41:54Z",
+                                "generated_at": "2024-12-19T16:01:58Z",
                                 "metrics": {
                                     "./setup.py": {
                                         "CONFIDENCE.HIGH": 0,
@@ -526,7 +554,7 @@
                                         "flake8 ."
                                     ],
                                     "stdout_text": "./src/argo_probe_fedcloud/helpers.py:105:80: E501 line too long (93 > 79 characters)\n./src/argo_probe_fedcloud/swiftprobe.py:45:80: E501 line too long (82 > 79 characters)\n./src/argo_probe_fedcloud/swiftprobe.py:150:80: E501 line too long (84 > 79 characters)\n./src/argo_probe_fedcloud/swiftprobe.py:184:80: E501 line too long (85 > 79 characters)\n./src/argo_probe_fedcloud/swiftprobe.py:193:80: E501 line too long (83 > 79 characters)\n./src/argo_probe_fedcloud/swiftprobe.py:198:80: E501 line too long (86 > 79 characters)\n./src/argo_probe_fedcloud/swiftprobe.py:204:80: E501 line too long (80 > 79 characters)\n./src/argo_probe_fedcloud/swiftprobe.py:236:80: E501 line too long (84 > 79 characters)\n./src/argo_probe_fedcloud/swiftprobe.py:247:80: E501 line too long (83 > 79 characters)\n./src/argo_probe_fedcloud/swiftprobe.py:256:80: E501 line too long (82 > 79 characters)\n./src/argo_probe_fedcloud/cloudinfo.py:40:80: E501 line too long (86 > 79 characters)\n./src/argo_probe_fedcloud/cloudinfo.py:60:80: E501 line too long (88 > 79 characters)\n./src/argo_probe_fedcloud/cloudinfo.py:75:80: E501 line too long (87 > 79 characters)\n./src/argo_probe_fedcloud/cloudinfo.py:117:80: E501 line too long (87 > 79 characters)\n./src/argo_probe_fedcloud/cloudinfo.py:125:80: E501 line too long (81 > 79 characters)\n./src/argo_probe_fedcloud/cloudinfo.py:136:80: E501 line too long (84 > 79 characters)\n./src/argo_probe_fedcloud/cloudinfo.py:146:80: E501 line too long (88 > 79 characters)\n./src/argo_probe_fedcloud/cloudinfo.py:149:80: E501 line too long (85 > 79 characters)\n./src/argo_probe_fedcloud/novaprobe.py:51:80: E501 line too long (80 > 79 characters)\n./src/argo_probe_fedcloud/novaprobe.py:60:80: E501 line too long (87 > 79 characters)\n./src/argo_probe_fedcloud/novaprobe.py:76:80: E501 line too long (87 > 79 characters)\n./src/argo_probe_fedcloud/novaprobe.py:87:80: E501 line too long (86 > 79 characters)\n./src/argo_probe_fedcloud/novaprobe.py:93:80: E501 line too long (80 > 79 characters)\n./src/argo_probe_fedcloud/novaprobe.py:120:80: E501 line too long (87 > 79 characters)\n./src/argo_probe_fedcloud/novaprobe.py:142:80: E501 line too long (92 > 79 characters)\n./src/argo_probe_fedcloud/novaprobe.py:155:80: E501 line too long (82 > 79 characters)\n./src/argo_probe_fedcloud/novaprobe.py:175:80: E501 line too long (84 > 79 characters)\n./src/argo_probe_fedcloud/novaprobe.py:192:80: E501 line too long (85 > 79 characters)\n./src/argo_probe_fedcloud/novaprobe.py:197:80: E501 line too long (85 > 79 characters)\n./src/argo_probe_fedcloud/novaprobe.py:205:80: E501 line too long (83 > 79 characters)\n./src/argo_probe_fedcloud/novaprobe.py:209:80: E501 line too long (86 > 79 characters)\n./src/argo_probe_fedcloud/novaprobe.py:212:80: E501 line too long (81 > 79 characters)\n./src/argo_probe_fedcloud/novaprobe.py:213:80: E501 line too long (80 > 79 characters)\n./src/argo_probe_fedcloud/novaprobe.py:253:80: E501 line too long (84 > 79 characters)\n./src/argo_probe_fedcloud/novaprobe.py:289:80: E501 line too long (83 > 79 characters)\n./src/argo_probe_fedcloud/novaprobe.py:299:80: E501 line too long (86 > 79 characters)\n./src/argo_probe_fedcloud/novaprobe.py:320:80: E501 line too long (80 > 79 characters)",
-                                    "url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/argo-probe-fedcloud.assess.sqaaas/job/master/2/execution/node/88/log?consoleFull"
+                                    "url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/argo-probe-fedcloud.assess.sqaaas/job/master/3/execution/node/88/log?consoleFull"
                                 },
                                 "level": "REQUIRED",
                                 "build_repo": "https://github.com/eosc-synergy/argo-probe-fedcloud.assess.sqaaas"
@@ -579,7 +607,7 @@
                                         "pytest  --json-report  --json-report-indent 4"
                                     ],
                                     "stdout_text": "============================= test session starts ==============================\nplatform linux -- Python 3.9.17, pytest-7.1.3, pluggy-1.2.0\nrootdir: /sqaaas-build/github.com/ARGOeu-Metrics/argo-probe-fedcloud\nplugins: metadata-3.0.0, json-report-1.5.0\ncollected 0 items\n\n--------------------------------- JSON report ----------------------------------\nreport saved to: .report.json\n============================ no tests ran in 0.02s =============================",
-                                    "url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/argo-probe-fedcloud.assess.sqaaas/job/master/2/execution/node/97/log?consoleFull"
+                                    "url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/argo-probe-fedcloud.assess.sqaaas/job/master/3/execution/node/97/log?consoleFull"
                                 },
                                 "level": "REQUIRED",
                                 "build_repo": "https://github.com/eosc-synergy/argo-probe-fedcloud.assess.sqaaas"
@@ -632,7 +660,7 @@
                                         "get_git_tags.py"
                                     ],
                                     "stdout_text": "['v0.8.0', 'v0.7.1-1', 'v0.7.0-1', 'v0.10.2', 'v0.10.0', 'v.0.10.2', 'v.0.10.0', 'v.0.9.0', 'v.0.8.0', 'V.0.7.1-1', 'v.0.7.0-1']",
-                                    "url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/argo-probe-fedcloud.assess.sqaaas/job/master/2/execution/node/106/log?consoleFull"
+                                    "url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/argo-probe-fedcloud.assess.sqaaas/job/master/3/execution/node/106/log?consoleFull"
                                 },
                                 "level": "REQUIRED",
                                 "build_repo": "https://github.com/eosc-synergy/argo-probe-fedcloud.assess.sqaaas"
@@ -686,7 +714,7 @@
                                         "get_git_tags.py"
                                     ],
                                     "stdout_text": "['v0.8.0', 'v0.7.1-1', 'v0.7.0-1', 'v0.10.2', 'v0.10.0', 'v.0.10.2', 'v.0.10.0', 'v.0.9.0', 'v.0.8.0', 'V.0.7.1-1', 'v.0.7.0-1']",
-                                    "url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/argo-probe-fedcloud.assess.sqaaas/job/master/2/execution/node/106/log?consoleFull"
+                                    "url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/argo-probe-fedcloud.assess.sqaaas/job/master/3/execution/node/106/log?consoleFull"
                                 },
                                 "level": "REQUIRED",
                                 "build_repo": "https://github.com/eosc-synergy/argo-probe-fedcloud.assess.sqaaas"
@@ -741,7 +769,7 @@
                                         "get_git_tags.py"
                                     ],
                                     "stdout_text": "['v0.8.0', 'v0.7.1-1', 'v0.7.0-1', 'v0.10.2', 'v0.10.0', 'v.0.10.2', 'v.0.10.0', 'v.0.9.0', 'v.0.8.0', 'V.0.7.1-1', 'v.0.7.0-1']",
-                                    "url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/argo-probe-fedcloud.assess.sqaaas/job/master/2/execution/node/106/log?consoleFull"
+                                    "url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/argo-probe-fedcloud.assess.sqaaas/job/master/3/execution/node/106/log?consoleFull"
                                 },
                                 "level": "REQUIRED",
                                 "build_repo": "https://github.com/eosc-synergy/argo-probe-fedcloud.assess.sqaaas"
@@ -809,11 +837,11 @@
                         "QC.Doc"
                     ],
                     "missing": [
-                        "QC.Lic",
-                        "QC.Doc"
+                        "QC.Lic"
                     ],
                     "fulfilled": [
-                        "QC.Acc"
+                        "QC.Acc",
+                        "QC.Doc"
                     ]
                 },
                 "silver": {
@@ -826,12 +854,12 @@
                     ],
                     "missing": [
                         "QC.Met",
-                        "QC.Lic",
-                        "QC.Doc"
+                        "QC.Lic"
                     ],
                     "fulfilled": [
                         "QC.Acc",
-                        "QC.Ver"
+                        "QC.Ver",
+                        "QC.Doc"
                     ]
                 },
                 "gold": {
@@ -849,12 +877,12 @@
                         "QC.Uni",
                         "QC.Lic",
                         "QC.Sty",
-                        "QC.Met",
-                        "QC.Doc"
+                        "QC.Met"
                     ],
                     "fulfilled": [
                         "QC.Acc",
                         "QC.Ver",
+                        "QC.Doc",
                         "QC.Sec"
                     ]
                 }
