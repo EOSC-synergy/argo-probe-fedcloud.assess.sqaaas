@@ -3,7 +3,7 @@ config:
   project_repos:
     github.com/ARGOeu-Metrics/argo-probe-fedcloud:
       branch: master
-      repo: https://github.com/ARGOeu-Metrics/argo-probe-fedcloud/
+      repo: https://github.com/ARGOeu-Metrics/argo-probe-fedcloud
     github.com/EOSC-synergy/sqaaas-tooling:
       branch: main
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
@@ -15,50 +15,50 @@ sqa_criteria:
     repos:
       github.com/ARGOeu-Metrics/argo-probe-fedcloud git:
         commands:
-        - /usr/bin/env sh .sqa/script.shaky-russet-hyena.sh
-        container: qc.acc_tasty-ruby-caiman
+        - /usr/bin/env sh .sqa/script.woozy-periwinkle-guppy.sh
+        container: qc.acc_clammy-copper-tetra
   QC.Doc:
     repos:
       github.com/ARGOeu-Metrics/argo-probe-fedcloud find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.fuzzy-tan-cattle.sh
-        container: qc.doc_muzzy-persimmon-wombat
+        - /usr/bin/env sh .sqa/script.crappy-puce-bison.sh
+        container: qc.doc_scanty-chestnut-camel
       github.com/ARGOeu-Metrics/argo-probe-fedcloud git:
         commands:
-        - /usr/bin/env sh .sqa/script.bluesy-razzmatazz-gopher.sh
-        container: qc.doc_stuffy-aquamarine-fox
+        - /usr/bin/env sh .sqa/script.crabby-ivory-kakapo.sh
+        container: qc.doc_homey-indigo-dane
       github.com/ARGOeu-Metrics/argo-probe-fedcloud markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.wheezy-silver-neanderthal.sh
-        container: qc.doc_sunny-ochre-quokka
+        - /usr/bin/env sh .sqa/script.homely-chocolate-clam.sh
+        container: qc.doc_lousy-pumpkin-kudu
   QC.Lic:
     repos:
       github.com/ARGOeu-Metrics/argo-probe-fedcloud licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.gamy-olivine-labradoodle.sh
-        container: qc.lic_freaky-emerald-terrier
+        - /usr/bin/env sh .sqa/script.squeaky-ruby-coati.sh
+        container: qc.lic_crabby-zucchini-wolf
   QC.Sec:
     repos:
       github.com/ARGOeu-Metrics/argo-probe-fedcloud bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.stinky-amber-worm.sh
-        container: qc.sec_wheezy-sepia-sloth
+        - /usr/bin/env sh .sqa/script.skinny-cardinal-dane.sh
+        container: qc.sec_gummy-mustard-newfoundland
   QC.Sty:
     repos:
       github.com/ARGOeu-Metrics/argo-probe-fedcloud flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.lousy-indigo-orangutan.sh
-        container: qc.sty_skinny-myrtle-abyssinian
+        - /usr/bin/env sh .sqa/script.homely-lavender-earwig.sh
+        container: qc.sty_muggy-carmine-schnauzer
   QC.Uni:
     repos:
       github.com/ARGOeu-Metrics/argo-probe-fedcloud pytest:
         commands:
-        - /usr/bin/env sh .sqa/script.snappy-azure-dragonfly.sh
-        container: qc.uni_skimpy-platinum-cheetah
+        - /usr/bin/env sh .sqa/script.tacky-mustard-avocet.sh
+        container: qc.uni_stinky-ecru-fly
   QC.Ver:
     repos:
       github.com/ARGOeu-Metrics/argo-probe-fedcloud get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.wimpy-vermilion-skunk.sh
-        container: qc.ver_fuzzy-olivine-otter
+        - /usr/bin/env sh .sqa/script.stealthy-ivory-whale.sh
+        container: qc.ver_geeky-eggplant-dachshund
 timeout: 5400
