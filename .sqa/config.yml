@@ -1,0 +1,64 @@
+config:
+  credentials: []
+  project_repos:
+    github.com/ARGOeu-Metrics/argo-probe-fedcloud:
+      branch: master
+      repo: https://github.com/ARGOeu-Metrics/argo-probe-fedcloud
+    github.com/EOSC-synergy/sqaaas-tooling:
+      branch: main
+      repo: https://github.com/EOSC-synergy/sqaaas-tooling
+environment:
+  JPL_DOCKERFORCEBUILD: enabled
+  JPL_KEEPGOING: enabled
+sqa_criteria:
+  QC.Acc:
+    repos:
+      github.com/ARGOeu-Metrics/argo-probe-fedcloud git:
+        commands:
+        - /usr/bin/env sh .sqa/script.skinny-ecru-mayfly.sh
+        container: qc.acc_lovely-thistle-boar
+  QC.Doc:
+    repos:
+      github.com/ARGOeu-Metrics/argo-probe-fedcloud find_doc_files.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.snippy-celadon-akbash.sh
+        container: qc.doc_bumpy-smalt-bombay
+      github.com/ARGOeu-Metrics/argo-probe-fedcloud git:
+        commands:
+        - /usr/bin/env sh .sqa/script.slimy-sapphire-kudu.sh
+        container: qc.doc_ugly-rust-snake
+      github.com/ARGOeu-Metrics/argo-probe-fedcloud markdownlint:
+        commands:
+        - /usr/bin/env sh .sqa/script.cloudy-cinnabar-bird.sh
+        container: qc.doc_craggy-khaki-worm
+  QC.Lic:
+    repos:
+      github.com/ARGOeu-Metrics/argo-probe-fedcloud licensee:
+        commands:
+        - /usr/bin/env sh .sqa/script.sunny-orchid-pig.sh
+        container: qc.lic_woolly-indigo-discus
+  QC.Sec:
+    repos:
+      github.com/ARGOeu-Metrics/argo-probe-fedcloud bandit:
+        commands:
+        - /usr/bin/env sh .sqa/script.hazy-peach-seahorse.sh
+        container: qc.sec_woozy-fuchsia-nightingale
+  QC.Sty:
+    repos:
+      github.com/ARGOeu-Metrics/argo-probe-fedcloud flake8:
+        commands:
+        - /usr/bin/env sh .sqa/script.leaky-saffron-labradoodle.sh
+        container: qc.sty_sloppy-indigo-armadillo
+  QC.Uni:
+    repos:
+      github.com/ARGOeu-Metrics/argo-probe-fedcloud pytest:
+        commands:
+        - /usr/bin/env sh .sqa/script.shabby-alizarin-tzu.sh
+        container: qc.uni_craggy-amethyst-akita
+  QC.Ver:
+    repos:
+      github.com/ARGOeu-Metrics/argo-probe-fedcloud get_git_tags.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.craggy-magenta-robin.sh
+        container: qc.ver_cozy-goldenrod-toad
+timeout: 5400
